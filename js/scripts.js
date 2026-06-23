@@ -41,3 +41,20 @@ questions.forEach(function (q) {
     answer.classList.toggle("open");
   });
 });
+
+// Contact Form
+const form = document.getElementById("contactform");
+if (form) {
+  form.addEventListener("submit", function (event) {
+    event.preventDefault();
+    const nameInput = document.getElementById("name");
+    const nameValue = nameInput ? nameInput.value.trim() : "";
+    const formMsg = document.getElementById("formMsg");
+    if (nameValue === "") {
+      formMsg.textContent = "Please enter your name.";
+    } else {
+      formMsg.textContent = "Thanks, " + nameValue + "!";
+      form.reset();
+    }
+  });
+}
