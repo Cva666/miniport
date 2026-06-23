@@ -4,6 +4,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact</title>
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
-  <body></body>
+  <body>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <button id="themetoggle">Light/Dark</button>
+    </nav>
+    <h1>Contact!</h1>
+    <form id="contactform">
+      <input type="text" id="name" placeholder="Your Name" />
+      <textarea id="message" placeholder="Your Message Here!"></textarea>
+      <button type="submit">Send</button>
+    </form>
+    <p id="formMsg"></p>
+    <footer>
+      <p>&copy; <span id="year"></span> Xavier</p>
+    </footer>
+    <script src="js/scripts.js"></script>
+  </body>
 </html>
