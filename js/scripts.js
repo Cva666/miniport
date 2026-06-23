@@ -34,7 +34,7 @@ if (yearspan) {
 
 // Faq Q&A
 
-const questions = document.querySelectorAll("faq-question");
+const questions = document.querySelectorAll(".faq-question");
 questions.forEach(function (q) {
   q.addEventListener("click", function () {
     const answer = q.nextElementSibling;
