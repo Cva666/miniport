@@ -31,3 +31,13 @@ const yearspan = document.getElementById("year");
 if (yearspan) {
   yearspan.textContent = new Date().getFullYear();
 }
+
+// Faq Q&A
+
+const questions = document.querySelectorAll("faq-question");
+questions.forEach(function (q) {
+  q.addEventListener("click", function () {
+    const answer = q.nextElementSibling;
+    answer.classList.toggle("open");
+  });
+});
